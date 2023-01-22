@@ -11,6 +11,3 @@ if [[ $(lsb_release -rs) == "22.04" ]]; then
        echo "Compatible version"
        #Copy your files heri
 fi
-echo "Hello, world!"
-read -p "What is your name? " name
-echo "Hello, ${name}!"
