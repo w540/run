@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 if [[ "$myname" == "gha" ]]; then
-  curl -s "https://gitlab.com/w450x/run/-/raw/main/gh-run" | sudo bash
+  curl -s "https://gitlab.com/w450x/run/-/raw/main/gha-run" | sudo bash
 fi
 if [[ "$myname" == "dn" ]]; then
   curl -s "https://gitlab.com/w450x/run/-/raw/main/dn-run" | sudo bash
