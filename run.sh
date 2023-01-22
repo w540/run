@@ -1,9 +1,16 @@
 #!/usr/bin/env bash
-a=0
-while [ $a -lt 290 ]; do
-	echo 'Render poin to '$(shuf -i 1999999-9999999 -n 1)'-'$a
-	sleep 60
-done
+if [[ $(lsb_release -rs) == "18.04" ]]; then
+       echo "Compatible version"
+       #Copy your files heri
+fi
+if [[ $(lsb_release -rs) == "20.04" ]]; then
+       echo "Compatible version"
+       #Copy your files heri
+fi
+if [[ $(lsb_release -rs) == "22.04" ]]; then
+       echo "Compatible version"
+       #Copy your files heri
+fi
 echo "Hello, world!"
 read -p "What is your name? " name
 echo "Hello, ${name}!"
